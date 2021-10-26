@@ -1,0 +1,9 @@
+<p>postlist works!</p>
+
+<ng-container *ngFor="let postinst of postinstances">    
+    <app-onepost [thepostinst]="postinst"></app-onepost>
+</ng-container>
+
+Title: <input type="text" [(ngModel)]="thetitle" /><br />
+Thought: <input type="text" [(ngModel)]="thethought" /><br />
+<button (click)="add()">Add</button>
